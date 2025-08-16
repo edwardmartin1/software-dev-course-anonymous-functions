@@ -50,7 +50,7 @@ let notComplete = todos.filter((objectName) => objectName.completed === false);
   2. Use an anonymous function as the comparison function.
   3. Sort tasks in ascending order of priority (1 = highest).
   */
-let sortedTodos = todos.sort((a, b) => a.priority - b.priority);  
+todos.sort((a, b) => a.priority - b.priority);  
   
   
   /*
@@ -86,7 +86,7 @@ let sortedNotComplete =
   // ============================================
   
 console.log("Incomplete Tasks:", notComplete);
-console.log("Sorted by Priority:", sortedTodos);
+console.log("Sorted by Priority:", todos);
 console.log("All Tasks Completed:", allCompleted);
 console.log("Sorted Incomplete Tasks:", sortedNotComplete);
   
